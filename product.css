@@ -407,7 +407,8 @@ ul{
     }
     .listCart{
         width: 100%;
-        font-size: 10px;
+        text-align: center;
+        align-items: baseline;
     }
 }
 @media screen and (max-width:768px) {
@@ -419,7 +420,8 @@ ul{
     }
     .listCart{
         width: 100%;
-        font-size: 10px;
+        text-align: center;
+        align-items: baseline;
     }
 }
 @media only screen and (max-width:500px){
@@ -438,6 +440,7 @@ ul{
     }
     .listCart{
         width: 100%;
-        font-size: 10px;
+        text-align: center;
+        align-items: baseline;
     }
 }
