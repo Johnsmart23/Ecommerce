@@ -83,10 +83,6 @@ const displayCheckoutSummary = () => {
     });
 };
 
-
-
-
-
 listProductHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
     if (positionClick.classList.contains('addCart')) {
