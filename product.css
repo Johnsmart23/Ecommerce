@@ -444,3 +444,11 @@ ul{
         align-items: baseline;
     }
 }
+
+@media only screen and (max-width:400px){
+    .listCart{
+        width: 110%;
+        text-align: center;
+        align-items: baseline;
+    }
+}
