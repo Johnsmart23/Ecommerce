@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Products</title>
+</head>
+<body class="showCart">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="image/logo 2.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="#footer">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="signup.html">Account</a></li>
+                    </ul>
+                </nav>
+                <!-- Place the cart icon within the navbar -->
+                <div class="icon-cart">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+                    <span>0</span>
+                </div>
+                <img src="image/menu logo.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <header>
+            <div class="title">All Products </div>
+            <div class="icon-cart">
+            </div>
+        </header>
+        <div class="listProduct">
+            <div class="item">
+                <img src="image/buy-1 1.png" alt="">
+                <h2>NAME PRODUCT</h2>
+                <div class="price">$50</div>
+                <button class="addCart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cartTab">
+        <h1>Cart</h1>
+        <div class="listCart">
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">CHECK OUT</button>
+        </div>
+    </div>
+
+    <!----- Footer ------>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Andriod and IOS mobile phone.</p>
+                    <div class="app-logo">
+                       <a href="www.googleplay.com"><img src="image/google play logo.png"></a>
+                        <a href="www.applestore.com"><img src="image/app store logo.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                   <img src="image/logo 2.png">
+                    <p>Our Purpose Is To Sustainably Make The Pleasure And Benefits Of Sports Accessible To The Many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="">Coupons</a></li>
+                        <li><a href="">Blog Post</a></li>
+                        <li><a href="">Return Policy</a></li>
+                        <li><a href="">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li> <i class="fa fa-facebook"> <a href="">Facebook</a></i></li>
+                        <li>  <i class="fa fa-twitter"> </i><a href="">Twitter</a></li>
+                        <li> <i class="fa fa-instagram"> <a href="">Instagram</a></i></li>
+                        <li> <i class="fa fa-youtube"> <a href="">YouTube</a></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright ©2024</p>
+        </div>
+    </div>
+
+    <!-- Toggle Menu Script -->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle(){
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px";
+            } else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <script src="App.js"></script>
+</body>
+</html>

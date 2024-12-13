@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <img src="image/logo 2.png" width="125px">
+        </div>
+        <nav>
+            <ul id="menuitems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#footer">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="signup.html">Account</a></li>
+            </ul>
+        </nav>
+        <!-- Place the cart icon within the navbar -->
+        <div class="icon-cart">
+            <a href="product.html"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+            </svg>
+            <span>0</span></a>
+        </div>
+        <img src="image/menu logo.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+    </div>
+    
+  <!-----Sign Up----->
+  <div id="login-page">
+    <div class="image-section">
+        <img src="image/image1.png">
+    </div>
+
+    <div class="form-section">
+        <div class="form-container">
+            <div class="tab-titles">
+                <p class="tab-link active" onclick="showLogin()">Log in</p>
+                <p class="tab-link" onclick="showRegister()">Register</p>
+            </div>
+            <form id="login-form" class="form-content active">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="signup.html">Register</a></p>
+            </form>
+
+            <form id="register-form" class="form-content">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+      <!-----  footer ------>
+      <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Andriod and IOS mobile phone.</p>
+                    <div class="app-logo">
+                       <a href="www.googleplay.com"><img src="image/google play logo.png"></a>
+                        <a href="www.applestore.com"><img src="image/app store logo.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                   <img src="image/Redstore logo.png">
+                    <p>Our Purpose Is To Sustainably Make The Pleasure And Benefits Of Sports Accessible To The Many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                    <li><a href="">Coupons</a></li>
+                    <li>  <a href="">Blog Post</a></li>
+                    <li><a href="">Return Policy</a></li>
+                    <li><a href="">Join Affiliate</a></li>
+                </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li> <i class="fa fa-facebook"> <a href="">Facebook</a></i></li>
+                        <li>  <i class="fa fa-twitter"> </i><a href="">Twitter</a></li>
+                        <li> <i class="fa fa-instagram"> <a href="">Instagram</a></i></li>
+                        <li> <i class="fa fa-youtube"> <a href="">YouTube</a></i></li>
+                </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright ©2024</p>
+        </div>
+      </div>
+      <!--toggle menu-->
+      <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle(){
+            if (menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight = "200px";
+        }
+        else
+        {
+            menuitems.style.maxHeight = "0px";
+        }
+        }
+
+        function showLogin() {
+            document.getElementById("login-form").classList.add("active");
+            document.getElementById("register-form").classList.remove("active");
+        }
+    
+        function showRegister() {
+            document.getElementById("register-form").classList.add("active");
+            document.getElementById("login-form").classList.remove("active");
+        }
+    </script>
+    <script src="App.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "name": "Red Printed T-shirt",
+        "price": 50,
+        "image": "image/buy-1 1.png"
+    },
+    {
+        "id": "2",
+        "name": "Snickers",
+        "price": 50,
+        "image": "image/gray sport shoe.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Long Pants",
+        "price": 50,
+        "image": "image/buy-3.png"
+    },
+    {
+        "id": "4",
+        "name": "Black Printed T-shirt",
+        "price": 50,
+        "image": "image/product-4 1.png"
+    },
+    {
+        "id": "5",
+        "name": "AirForce Snickers",
+        "price": 50,
+        "image": "image/product-5.png"
+    },
+    {
+        "id": "6",
+        "name": "Black Polo",
+        "price": 50,
+        "image": "image/product-6.png"
+    },
+    {
+        "id": "7",
+        "name": "Socks",
+        "price": 50,
+        "image": "image/product-7.png"
+    },
+    {
+        "id": "8",
+        "name": "Black Wrist Watch",
+        "price": 50,
+        "image": "image/product-8.png"
+    },
+    {
+        "id": "9",
+        "name": "Flat Snickers",
+        "price": 50,
+        "image": "image/product-11.png"
+    },
+    {
+        "id": "10",
+        "name": "Black Pants",
+        "price": 50,
+        "image": "image/product-12.png"
+    },
+    {
+        "id": "11",
+        "name": "Gray Watch",
+        "price": 50,
+        "image": "image/product-9.png"
+    },
+    {
+        "id": "12",
+        "name": "Black Joggers",
+        "price": 50,
+        "image": "image/product-10.png"
+    }
+]
