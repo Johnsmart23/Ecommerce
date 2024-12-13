@@ -402,12 +402,21 @@ ul{
         display: block;
         cursor: pointer;
     }
+    .cartTab{
+        width: 100%;
+    }
+    .listCart{
+        width: 100%;
+    }
 }
 @media screen and (max-width:768px) {
     .listProduct{
         grid-template-columns: repeat(1, 1fr);
     }
     .cartTab{
+        width: 100%;
+    }
+    .listCart{
         width: 100%;
     }
 }
@@ -423,6 +432,9 @@ ul{
         width: 60%;
     }
     .cartTab{
+        width: 100%;
+    }
+    .listCart{
         width: 100%;
     }
 }
